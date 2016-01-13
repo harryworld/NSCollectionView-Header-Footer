@@ -13,6 +13,8 @@
 		D14B45481C46529E00F02C8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14B45461C46529E00F02C8E /* Main.storyboard */; };
 		D14B45531C46529E00F02C8E /* NSCollectionView_Header_FooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B45521C46529E00F02C8E /* NSCollectionView_Header_FooterTests.swift */; };
 		D14B455E1C46529E00F02C8E /* NSCollectionView_Header_FooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B455D1C46529E00F02C8E /* NSCollectionView_Header_FooterUITests.swift */; };
+		D14B456C1C46541200F02C8E /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B456B1C46541200F02C8E /* CollectionViewItem.swift */; };
+		D14B456E1C46542400F02C8E /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14B456D1C46542400F02C8E /* CollectionViewItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D14B45591C46529E00F02C8E /* NSCollectionView-Header-FooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSCollectionView-Header-FooterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14B455D1C46529E00F02C8E /* NSCollectionView_Header_FooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCollectionView_Header_FooterUITests.swift; sourceTree = "<group>"; };
 		D14B455F1C46529E00F02C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14B456B1C46541200F02C8E /* CollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
+		D14B456D1C46542400F02C8E /* CollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				D14B45441C46529E00F02C8E /* Assets.xcassets */,
 				D14B45461C46529E00F02C8E /* Main.storyboard */,
 				D14B45491C46529E00F02C8E /* Info.plist */,
+				D14B456B1C46541200F02C8E /* CollectionViewItem.swift */,
+				D14B456D1C46542400F02C8E /* CollectionViewItem.xib */,
 			);
 			path = "NSCollectionView-Header-Footer";
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 			files = (
 				D14B45451C46529E00F02C8E /* Assets.xcassets in Resources */,
 				D14B45481C46529E00F02C8E /* Main.storyboard in Resources */,
+				D14B456E1C46542400F02C8E /* CollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +261,7 @@
 			files = (
 				D14B45431C46529E00F02C8E /* ViewController.swift in Sources */,
 				D14B45411C46529E00F02C8E /* AppDelegate.swift in Sources */,
+				D14B456C1C46541200F02C8E /* CollectionViewItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
