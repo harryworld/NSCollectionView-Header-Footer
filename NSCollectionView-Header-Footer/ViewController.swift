@@ -22,6 +22,10 @@ class ViewController: NSViewController {
 
 extension ViewController: NSCollectionViewDataSource {
     
+    func numberOfSectionsInCollectionView(collectionView: NSCollectionView) -> Int {
+        return 5
+    }
+    
     func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -31,4 +35,32 @@ extension ViewController: NSCollectionViewDataSource {
         
         return item
     }
+    
+    func collectionView(collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> NSView {
+        var nibName: String?
+        if kind == NSCollectionElementKindSectionHeader {
+            nibName = "Header"
+        } else if kind == NSCollectionElementKindSectionFooter {
+            nibName = "Footer"
+        }
+        let view = collectionView.makeSupplementaryViewOfKind(kind, withIdentifier: nibName!, forIndexPath: indexPath)
+        return view
+    }
+    
+}
+
+extension ViewController: NSCollectionViewDelegateFlowLayout {
+    
+    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> NSSize {
+        return NSSize(width: 100, height: 50)
+    }
+    
+    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize {
+        return NSSize(width: 0, height: 20)
+    }
+    
+    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForFooterInSection section: Int) -> NSSize {
+        return NSSize(width: 0, height: 20)
+    }
+    
 }
