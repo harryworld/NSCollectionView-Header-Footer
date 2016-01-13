@@ -3,6 +3,8 @@
 - Set Header and Footer
 - Using NSCollectionViewFlowLayout (available in 10.11 in 2015)
 
+![screenshot](https://raw.githubusercontent.com/harryworld/NSCollectionView-Header-Footer/master/screenshot.png)
+
 ## stackoverflow
 
 In answering stackoverflow question [NSCollectionView with Header and Footer](http://stackoverflow.com/questions/34758314/nscollectionview-with-header-and-footer/34759350#comment57267110_34759350)
