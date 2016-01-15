@@ -19,6 +19,8 @@
 		D14B45721C465E7900F02C8E /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14B45711C465E7900F02C8E /* Footer.xib */; };
 		D14B45741C465F3F00F02C8E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B45731C465F3F00F02C8E /* Header.swift */; };
 		D14B45761C465F8F00F02C8E /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B45751C465F8F00F02C8E /* Footer.swift */; };
+		D14B45BD1C488DE800F02C8E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B45BC1C488DE800F02C8E /* HeaderView.swift */; };
+		D1C4222E1C48AC5600284429 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C4222D1C48AC5600284429 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		D14B45711C465E7900F02C8E /* Footer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Footer.xib; sourceTree = "<group>"; };
 		D14B45731C465F3F00F02C8E /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		D14B45751C465F8F00F02C8E /* Footer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		D14B45BC1C488DE800F02C8E /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D1C4222D1C48AC5600284429 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,10 @@
 				D14B456D1C46542400F02C8E /* CollectionViewItem.xib */,
 				D14B45731C465F3F00F02C8E /* Header.swift */,
 				D14B456F1C465DD100F02C8E /* Header.xib */,
+				D14B45BC1C488DE800F02C8E /* HeaderView.swift */,
 				D14B45751C465F8F00F02C8E /* Footer.swift */,
 				D14B45711C465E7900F02C8E /* Footer.xib */,
+				D1C4222D1C48AC5600284429 /* FooterView.swift */,
 			);
 			path = "NSCollectionView-Header-Footer";
 			sourceTree = "<group>";
@@ -274,10 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14B45741C465F3F00F02C8E /* Header.swift in Sources */,
+				D1C4222E1C48AC5600284429 /* FooterView.swift in Sources */,
 				D14B45431C46529E00F02C8E /* ViewController.swift in Sources */,
 				D14B45411C46529E00F02C8E /* AppDelegate.swift in Sources */,
 				D14B456C1C46541200F02C8E /* CollectionViewItem.swift in Sources */,
 				D14B45761C465F8F00F02C8E /* Footer.swift in Sources */,
+				D14B45BD1C488DE800F02C8E /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +507,7 @@
 				D14B45641C46529E00F02C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D14B45651C46529E00F02C8E /* Build configuration list for PBXNativeTarget "NSCollectionView-Header-FooterTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +516,7 @@
 				D14B45671C46529E00F02C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D14B45681C46529E00F02C8E /* Build configuration list for PBXNativeTarget "NSCollectionView-Header-FooterUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +525,7 @@
 				D14B456A1C46529E00F02C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

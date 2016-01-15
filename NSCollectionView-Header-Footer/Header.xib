@@ -8,7 +8,7 @@
         <customObject id="-2" userLabel="File's Owner"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe">
+        <customView id="c22-O7-iKe" customClass="HeaderView" customModule="NSCollectionView_Header_Footer" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
@@ -26,9 +26,9 @@
                 <constraint firstItem="aja-J2-iVB" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="xTt-e9-5XN"/>
             </constraints>
         </customView>
-        <customObject id="tFi-FS-ztf" customClass="Header" customModule="NSCollectionView_Header_Footer" customModuleProvider="target">
+        <customObject id="7lL-MP-b4H" customClass="Header" customModule="NSCollectionView_Header_Footer" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="c22-O7-iKe" id="CSh-at-lV2"/>
+                <outlet property="view" destination="c22-O7-iKe" id="IiP-x8-lhw"/>
             </connections>
         </customObject>
     </objects>
