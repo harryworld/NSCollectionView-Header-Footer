@@ -7,7 +7,7 @@
 
 ## stackoverflow
 
-In answering stackoverflow question [NSCollectionView with Header and Footer](http://stackoverflow.com/questions/34758314/nscollectionview-with-header-and-footer/34759350#comment57267110_34759350)
+In answering stackoverflow question [NSCollectionView with Header and Footer](http://stackoverflow.com/questions/34758314/nscollectionview-with-header-and-footer/34759350#comment57267110_34759350) and [Set Header title with NSCollectionView](http://stackoverflow.com/questions/34802573/set-header-title-with-nscollectionview)
 
 ## License
 
