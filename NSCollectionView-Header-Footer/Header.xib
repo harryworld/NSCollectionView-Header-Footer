@@ -26,10 +26,5 @@
                 <constraint firstItem="aja-J2-iVB" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="xTt-e9-5XN"/>
             </constraints>
         </customView>
-        <customObject id="7lL-MP-b4H" customClass="Header" customModule="NSCollectionView_Header_Footer" customModuleProvider="target">
-            <connections>
-                <outlet property="view" destination="c22-O7-iKe" id="IiP-x8-lhw"/>
-            </connections>
-        </customObject>
     </objects>
 </document>

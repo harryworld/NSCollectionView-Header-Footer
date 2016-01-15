@@ -45,6 +45,9 @@ extension ViewController: NSCollectionViewDataSource {
         }
         let view = collectionView.makeSupplementaryViewOfKind(kind, withIdentifier: nibName!, forIndexPath: indexPath)
         
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor.greenColor().CGColor
+        
         if let view = view as? HeaderView {
             view.titleTextField?.stringValue = "Custom Header"
         } else if let view = view as? FooterView {

@@ -26,10 +26,5 @@
                 <constraint firstItem="myi-JT-tQV" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Y4F-VG-CyU"/>
             </constraints>
         </customView>
-        <customObject id="2Tx-dq-q72" customClass="Footer" customModule="NSCollectionView_Header_Footer" customModuleProvider="target">
-            <connections>
-                <outlet property="view" destination="c22-O7-iKe" id="IeB-Vo-QAc"/>
-            </connections>
-        </customObject>
     </objects>
 </document>
