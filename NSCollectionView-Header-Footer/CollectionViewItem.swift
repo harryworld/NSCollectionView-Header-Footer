@@ -15,7 +15,7 @@ class CollectionViewItem: NSCollectionViewItem {
         // Do view setup here.
         
         view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.grayColor().CGColor
+        view.layer?.backgroundColor = NSColor.gray.cgColor
     }
     
 }

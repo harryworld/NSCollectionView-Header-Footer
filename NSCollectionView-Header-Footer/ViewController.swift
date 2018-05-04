@@ -26,27 +26,27 @@ extension ViewController: NSCollectionViewDataSource {
         return 5
     }
     
-    func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
-    func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
-        let item = collectionView.makeItemWithIdentifier("CollectionViewItem", forIndexPath: indexPath)
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "CollectionViewItem"), for: indexPath)
         
         return item
     }
     
-    func collectionView(collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> NSView {
+    func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
         var nibName: String?
-        if kind == NSCollectionElementKindSectionHeader {
+        if kind == NSCollectionView.SupplementaryElementKind.sectionHeader {
             nibName = "Header"
-        } else if kind == NSCollectionElementKindSectionFooter {
+        } else if kind == NSCollectionView.SupplementaryElementKind.sectionFooter {
             nibName = "Footer"
         }
-        let view = collectionView.makeSupplementaryViewOfKind(kind, withIdentifier: nibName!, forIndexPath: indexPath)
+        let view = collectionView.makeSupplementaryView(ofKind: kind, withIdentifier: NSUserInterfaceItemIdentifier(rawValue: nibName!), for: indexPath)
         
         view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.greenColor().CGColor
+        view.layer?.backgroundColor = NSColor.green.cgColor
         
         if let view = view as? HeaderView {
             view.titleTextField?.stringValue = "Custom Header"
@@ -60,15 +60,15 @@ extension ViewController: NSCollectionViewDataSource {
 
 extension ViewController: NSCollectionViewDelegateFlowLayout {
     
-    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> NSSize {
+    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> NSSize {
         return NSSize(width: 100, height: 50)
     }
     
-    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize {
+    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize {
         return NSSize(width: 0, height: 20)
     }
     
-    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForFooterInSection section: Int) -> NSSize {
+    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForFooterInSection section: Int) -> NSSize {
         return NSSize(width: 0, height: 20)
     }
     
